@@ -1,0 +1,105 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "edunet.cat API"
+    },
+    "host": "dev.api.edunet.cat",
+    "basePath": "/",
+    "schemes": [
+        "http"
+    ],
+    "consumes": [
+        "text/json",
+        "text/xml"
+    ],
+    "produces": [
+        "application/json",
+        "text/html"
+    ],
+    "paths": {
+        "/centres": {
+            "get": {
+                "summary": "Retorna un llistat complet dels centres.",
+                "responses": {
+                    "200": {
+                        "description": "El llistat s'ha retornat correctament"
+                    }
+                },
+                "tags": [
+                    "centres"
+                ]
+            }
+        },
+        "/centres/{id}": {
+            "get": {
+                "summary": "Retorna el centre seleccionat.",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Id del centre",
+                        "required": true,
+                        "type": "number",
+                        "format": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "El centre s'ha retornat correctament"
+                    }
+                },
+                "tags": [
+                    "centres"
+                ]
+            }
+        },
+        "/assignatures": {
+            "get": {
+                "summary": "Retorna un llistat complet de les assignatures.",
+                "responses": {
+                    "200": {
+                        "description": "Retorna un llistat complet de les assignatures."
+                    }
+                },
+                "tags": [
+                    "assignatures"
+                ]
+            },
+            "post": {
+                "summary": "Crea una nova assignatura",
+                "responses": {
+                    "200": {
+                        "description": "L'assignatura s'ha creat correctament"
+                    }
+                },
+                "tags": [
+                    "assignatures"
+                ]
+            }
+        },
+        "/assignatures/{id}": {
+            "get": {
+                "summary": "Retorna la assignatura seleccionada.",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Id de l¡assignatura",
+                        "required": true,
+                        "type": "number",
+                        "format": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "La assignatura s'ha retornat correctament"
+                    }
+                },
+                "tags": [
+                    "assignatures"
+                ]
+            }
+        }
+    }
+}
