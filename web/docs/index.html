@@ -60,7 +60,7 @@
         log("key: " + key);
         if(key && key.trim() != "") {
             log("added key " + key);
-            window.authorizations.add("api_key", new ApiKeyAuthorization("api_key", key, "query"));
+            window.authorizations.add("access-token", new ApiKeyAuthorization("access-token", key, "query"));
         }
       }
 
@@ -81,7 +81,18 @@
 </head>
 
 <body class="swagger-section">
-
+<div id='header'>
+		<div class="swagger-ui-wrap">
+			<a id="logo" href="/">Edunet</a>
+			<form id='api_selector'>
+				<!-- <div class='input'><input placeholder="http://example.com/api" id="input_baseUrl" name="baseUrl" type="text"/></div> -->
+				<div class='input'>Clau API: 
+					<input placeholder="access-token" id="input_apiKey" name="apiKey" type="text" />
+				</div>
+				<!--   <div class='input'><a id="explore" href="#">Explore</a></div> -->
+			</form>
+		</div>
+	</div>
 
 <div id="message-bar" class="swagger-ui-wrap">&nbsp;</div>
 <div id="swagger-ui-container" class="swagger-ui-wrap"></div>

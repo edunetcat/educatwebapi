@@ -229,12 +229,6 @@
 .swagger-section .swagger-ui-wrap a img {
   border: none;
 }
-
-.swagger-section .swagger-ui-wrap a img#validator{
- display: none;
-}
-
-
 .swagger-section .swagger-ui-wrap article,
 .swagger-section .swagger-ui-wrap aside,
 .swagger-section .swagger-ui-wrap details,
@@ -1206,7 +1200,7 @@
   font-size: 1.5em;
   font-weight: bold;
   text-decoration: none;
-  background: transparent url(../images/logo_small.png) no-repeat left center;
+  background: transparent url(../images/icono-logo.png) no-repeat left center;
   padding: 20px 0 20px 40px;
   color: white;
 }
@@ -1222,7 +1216,7 @@
   margin: 0 10px 0 0;
 }
 .swagger-section #header form#api_selector .input input#input_apiKey {
-  width: 200px;
+  width: 400px;
 }
 .swagger-section #header form#api_selector .input input#input_baseUrl {
   width: 400px;
@@ -1259,4 +1253,9 @@
   min-height: 30px;
   text-align: center;
   padding-top: 10px;
+}
+
+#resources_container > div > h4 > span > a {
+	display:none;
+	
 }
