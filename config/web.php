@@ -52,7 +52,13 @@ $config = [
 						'showScriptName' => false,
 						'enableStrictParsing' => false,
 						'rules' => [
-								'centres' => 'centres/index'
+								'centres' => 'centres/view',
+								'centres/<id>' => 'centres/view',
+								'assignatures/<id>' => 'assignatures/view',
+								'assignatura/<id>' => 'assignatures/view',
+								'persona/<id>' => 'persona/view',
+								
+								
 						]
 				]
 		]
