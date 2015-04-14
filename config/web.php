@@ -57,6 +57,7 @@ $config = [
 								'assignatures/<id>' => 'assignatures/view',
 								'assignatura/<id>' => 'assignatures/view',
 								'persona/<id>' => 'persona/view',
+								'login/<user>/<password>' => 'login/login',
 								
 								
 						]
