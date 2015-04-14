@@ -9,6 +9,12 @@ use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
 use yii\web\IdentityInterface;
 
+/**
+*	Model User
+*
+* 	@author Marcos
+*/
+
 class User extends ActiveRecord implements IdentityInterface {
 	
 	
